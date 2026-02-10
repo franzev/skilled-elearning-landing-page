@@ -382,7 +382,7 @@ footer .container {
 footer .button {
   background: linear-gradient(
     180deg,
-    var(--color-indigo),
+    var(--color-indigo) -54%,
     var(--color-hot-pink)
   );
   color: var(--color-white);
@@ -394,7 +394,7 @@ footer .button:before {
   content: "";
   background:
     linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    linear-gradient(180deg, var(--color-indigo), var(--color-hot-pink));
+    linear-gradient(180deg, var(--color-indigo) -54%, var(--color-hot-pink));
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -410,6 +410,10 @@ footer .button:hover:before {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
   *,
   *:before,
   *:after {
