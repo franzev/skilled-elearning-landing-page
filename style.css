@@ -145,8 +145,8 @@ nav {
   }
 
   .header__logo img {
-    width: 111px;
-    height: 28px;
+    width: 6.938rem;
+    height: 1.75rem;
   }
 
   nav .button {
@@ -278,6 +278,7 @@ nav .button:hover {
 @media (min-width: 90rem) {
   .courses__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: var(--spacing-700);
   }
 }
 
@@ -293,7 +294,8 @@ nav .button:hover {
   z-index: 1;
 }
 
-.card--headline {
+.card__title-content {
+  font: var(--text-preset-3);
   padding: var(--spacing-400);
   background: linear-gradient(
     180deg,
@@ -302,10 +304,11 @@ nav .button:hover {
   );
   color: var(--color-white);
   border-radius: var(--spacing-200);
+  flex: 1;
 }
 
 @media (min-width: 48rem) {
-  .card--headline {
+  .card__title-content {
     padding-block: var(--spacing-800) var(--spacing-500);
   }
 }
@@ -331,6 +334,12 @@ nav .button:hover {
   font-size: 1rem;
   color: var(--color-grey);
   flex: 1;
+}
+
+@media (min-width: 48rem) {
+  .card__content p {
+    font: var(--text-preset-5);
+  }
 }
 
 .card__content a {
