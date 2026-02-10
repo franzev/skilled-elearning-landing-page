@@ -62,16 +62,17 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
+  position: relative;
 }
 
 a {
