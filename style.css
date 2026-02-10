@@ -64,6 +64,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 @media (min-width: 48rem) {
@@ -188,7 +189,6 @@ nav .button:hover {
 
 @media (min-width: 90rem) {
   .hero .container {
-    height: 608px;
     gap: var(--spacing-400);
   }
 }
@@ -198,7 +198,6 @@ nav .button:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-
   margin-inline: -6rem;
   margin-block-end: -5rem;
 }
@@ -207,6 +206,7 @@ nav .button:hover {
   .hero__image {
     height: 400px;
     flex: 1;
+    margin: 0;
   }
 
   .hero__image img {
@@ -216,6 +216,7 @@ nav .button:hover {
 
 @media (min-width: 90rem) {
   .hero__image {
+    flex: 0 0 631px;
     height: 560px;
   }
 }
