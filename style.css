@@ -97,12 +97,6 @@ ul {
   list-style: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   max-width: var(--max-width);
   margin-inline: auto;
@@ -138,7 +132,7 @@ nav {
     padding-block: var(--spacing-300);
   }
 
-  .button {
+  nav .button {
     height: 3rem;
     line-height: 0.9;
   }
@@ -149,7 +143,12 @@ nav {
     padding-inline: var(--spacing-1000);
   }
 
-  .button {
+  .header__logo img {
+    width: 111px;
+    height: 28px;
+  }
+
+  nav .button {
     height: auto;
     line-height: 1.5;
   }
@@ -189,6 +188,7 @@ nav .button:hover {
 
 @media (min-width: 90rem) {
   .hero .container {
+    height: 608px;
     gap: var(--spacing-400);
   }
 }
@@ -205,7 +205,6 @@ nav .button:hover {
 
 @media (min-width: 48rem) {
   .hero__image {
-    width: 328px;
     height: 400px;
     flex: 1;
   }
@@ -217,7 +216,6 @@ nav .button:hover {
 
 @media (min-width: 90rem) {
   .hero__image {
-    width: 631px;
     height: 560px;
   }
 }
@@ -255,7 +253,7 @@ nav .button:hover {
 }
 
 .courses {
-  background: linear-gradient(180deg, var(--color-white), hsl(236, 100%, 97%));
+  background: linear-gradient(180deg, transparent, hsl(236, 100%, 97%));
   padding-inline: var(--spacing-250);
   padding-block: var(--spacing-800) var(--spacing-1000);
 }
